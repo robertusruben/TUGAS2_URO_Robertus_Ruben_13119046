@@ -69,15 +69,15 @@ int main(){
     double op;
 
     /*Penentuan Fungsi*/
-    printf("Enter 1 for Addition");
-    printf("Enter 2 for Substraction");
-    printf("Enter 3 for Multiplication");
-    printf("Enter 4 for Division");
-    printf("Enter 5 for Power");
-    printf("Enter 6 for Integral of 3X^2 + 2X + 1")
+    printf("Enter 1 for Addition\n");
+    printf("Enter 2 for Substraction\n");
+    printf("Enter 3 for Multiplication\n");
+    printf("Enter 4 for Division\n");
+    printf("Enter 5 for Power\n");
+    printf("Enter 6 for Integral of 3X^2 + 2X + 1\n");
     printf("Enter Operator: ");
-    scanf("%d", &op);
-
+    scanf("%lf", &op);
+    printf("\n");
 
     /*If function berdasarkan Input fungsi*/
     if(op == 1)
@@ -86,6 +86,7 @@ int main(){
         scanf("%lf", &n1);
         printf("Enter input 2: ");
         scanf("%lf", &n2);
+        printf("\n");
 
         printf("%f + %f = %f", n1, n2, Addition(n1,n2));
     }
@@ -95,6 +96,7 @@ int main(){
         scanf("%lf", &n1);
         printf("Enter input 2: ");
         scanf("%lf", &n2);
+        printf("\n");
 
         printf("%f - %f = %f", n1, n2, Subtraction(n1,n2));
     }
@@ -104,6 +106,7 @@ int main(){
         scanf("%lf", &n1);
         printf("Enter input 2: ");
         scanf("%lf", &n2);
+        printf("\n");
 
         printf("%f * %f = %f", n1, n2, Multiplication(n1,n2));
     }
@@ -113,6 +116,7 @@ int main(){
         scanf("%lf", &n1);
         printf("Enter input 2: ");
         scanf("%lf", &n2);
+        printf("\n");
 
         printf("%f / %f = %f", n1, n2, Division(n1,n2));
     }
@@ -122,6 +126,7 @@ int main(){
         scanf("%lf", &n1);
         printf("Enter input 2: ");
         scanf("%lf", &n2);
+        printf("\n");
 
         printf("%f ^ %f = %f", n1, n2, Power(n1,n2));
     }
@@ -131,9 +136,15 @@ int main(){
         scanf("%lf", &n1);
         printf("To X: ");
         scanf("%lf", &n2);
+        printf("\n");
+
         printf("%Integral of the equation 3X^2 + 2X + 1 from X=%f to X=%f = %f", n1, n2, Integral(n1,n2));
     }
+    else {
+        printf("Invalid Input");
+    }
 
+    printf("\n\n\n");
     return 0;
 }
 
